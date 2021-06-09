@@ -5,7 +5,31 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+    extend: {
+      fontFamily: {
+        "sans": [
+          "Mulish",
+          "Inter",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica",
+          "Arial",
+          "sans-serif",]
+      },
+      colors: {
+        primary: {
+          "DEFAULT": "#000000"
+        }
+      }
+    },
   },
   variants: {
     extend: {},

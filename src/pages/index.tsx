@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="osama akb" content="osama profile page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <p className="text-lg">Hello there, it&lsquo;s Osama</p>
+      <p className="text-lg">Hey Its Osama</p>
     </div>
   );
 }
