@@ -26,7 +26,7 @@ export default function Home() {
           creating courses, writing blogs, and speaking at conferences.
         </p>
         <Link href="/about">
-          <a className="text-gray-400 underline">More about me?</a>
+          <a className="text-gray-400 underline text-xl">More about me?</a>
         </Link>
       </div>
     </div>
