@@ -9,6 +9,7 @@ export interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ children, sliderSettings }) => {
+  // @todo make this responsive
   const settings = {
     infinite: true,
     speed: 500,

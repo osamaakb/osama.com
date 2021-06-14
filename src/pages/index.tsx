@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "../components/Header";
 import BlogsCarousel from "../components/BlogsCarousel";
+import NewsLetter from "../components/NewsLetter";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
         <h1 className="text-white text-5xl m-16">Recent Writings</h1>
       </div>
       <BlogsCarousel />
+      <NewsLetter />
     </div>
   );
 }

@@ -8,6 +8,7 @@ export interface BlogsCarouselProps {}
 const BlogsCarousel: React.FC<BlogsCarouselProps> = () => {
   return (
     <div className="pt-16">
+      {/* @todo add real data and make the carousel responsive */}
       <Carousel>
         <div>
           <BlogItem />
