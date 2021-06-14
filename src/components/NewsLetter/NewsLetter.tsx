@@ -7,7 +7,7 @@ const NewsLetter: React.FC<NewsLetterProps> = () => {
   return (
     <div className="bg-gray-200 flex flex-col items-center">
       <div className="flex justify-center items-center">
-        <h1 className="text-5xl pt-12">Susbscribe to my newsletter</h1>
+        <h1 className="text-4xl pt-12">Susbscribe to my newsletter</h1>
       </div>
       <div className="pt-10 pb-14 flex justify-center">
         <input
@@ -18,7 +18,7 @@ const NewsLetter: React.FC<NewsLetterProps> = () => {
           onChange={(e) => setEmailInputValue(e.target.value)}
         />
         <button
-          className="bg-primary text-white mx-2 h-12 px-4 hover:bg-white hover:text-primary 
+          className="bg-primary text-white mx-2 h-12 px-4 hover:bg-white hover:text-primary
           border border-primary  duration-500"
         >
           Subscribe

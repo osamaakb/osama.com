@@ -2,17 +2,20 @@ import * as React from "react";
 import { socialIconsData } from "../../data/SocialIconsData";
 import Link from "next/link";
 
-export interface SocialIconsProps {}
+export interface SocialIconsProps {
+  black?: boolean;
+}
 
-const SocialIcons: React.FC<SocialIconsProps> = () => {
+const SocialIcons: React.FC<SocialIconsProps> = ({ black }) => {
+  const color = black ? "text-primary" : "text-white";
   return (
     <>
       {socialIconsData.map(({ Icon, path }, iconIdx) => {
         return (
-          <div key={iconIdx} className="mx-1">
+          <div key={iconIdx} className="mx-2">
             <a href={path}>
               <Icon
-                className="text-white hover:opacity-50 duration-300"
+                className={`${color} hover:opacity-50 duration-300`}
                 height={24}
                 width={24}
               />
