@@ -46,7 +46,7 @@ const Header: React.FC<HeaderProps> = () => {
             </div>
           </div>
         </div>
-        <DownArrowIcon className="text-white absolute my-3 bottom-0 right-1/2" />
+        <DownArrowIcon className="text-white absolute my-3 bottom-0 right-1/2 animate-bounce" />
       </div>
     </div>
   );
