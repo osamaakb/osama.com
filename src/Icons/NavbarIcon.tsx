@@ -10,8 +10,8 @@ function NavbarIcon(props: React.SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <line x1="25" y1="0.75" y2="0.75" stroke="black" />
-      <line x1="25" y1="11.5" x2="10" y2="11.5" stroke="black" />
+      <line x1="25" y1="0.75" y2="0.75" stroke="currentColor" />
+      <line x1="25" y1="11.5" x2="10" y2="11.5" stroke="currentColor" />
     </svg>
   );
 }

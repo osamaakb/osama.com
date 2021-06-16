@@ -4,23 +4,31 @@ import { NAV_ITEMS } from "../../data/NavItems";
 import CloseIcon from "../../Icons/CloseIcon";
 import NavbarIcon from "../../Icons/NavbarIcon";
 import Delayed from "../Delayed";
+import { useRouter } from "next/router";
 
 export interface NavbarProps {
   black?: boolean;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ black }) => {
+  const router = useRouter();
   const [showNavbar, setShowNavbar] = useState(false);
-  const color = black ? "text-primary" : "text-white";
+  const color = black ? "primary" : "white";
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
 
+  const isSelected = (path: string) => {
+    return router.pathname === path
+      ? `border-b-2 opacity-100 pb-1 border-${color}`
+      : "";
+  };
+
   return (
     <div className="flex justify-between items-center px-16 py-8 bg-transparent">
       <Link href="/">
-        <a className={`${color} text-base`}>Osama</a>
+        <a className={`text-${color} text-base`}>Osama</a>
       </Link>
       <div className="flex">
         {showNavbar && (
@@ -31,7 +39,13 @@ const Navbar: React.FC<NavbarProps> = ({ black }) => {
                   return (
                     <Link href={path} key={itemIdx}>
                       <a>
-                        <li className={`mx-2 text-sm ${color}`}>{title}</li>
+                        <li
+                          className={`mx-2 text-sm text-${color} opacity-50 hover:opacity-100 duration-300 ${isSelected(
+                            path
+                          )}`}
+                        >
+                          {title}
+                        </li>
                       </a>
                     </Link>
                   );
@@ -41,12 +55,15 @@ const Navbar: React.FC<NavbarProps> = ({ black }) => {
           </Delayed>
         )}
         <button
+          aria-label="show navbar list"
           style={{ outline: "none" }}
           className="ml-4"
           onClick={handleShowNavbar}
         >
-          {!showNavbar && <NavbarIcon className={`${color} animate-fade`} />}
-          {showNavbar && <CloseIcon className={`${color} animate-fade`} />}
+          {!showNavbar && (
+            <NavbarIcon className={`text-${color} animate-fade`} />
+          )}
+          {showNavbar && <CloseIcon className={`text-${color} animate-fade`} />}
         </button>
       </div>
     </div>
