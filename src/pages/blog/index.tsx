@@ -1,13 +1,16 @@
 import Head from "next/head";
 import React from "react";
+import { useQuery, useQueryClient } from "react-query";
+import { getBlogs } from "../../api/Blog";
 import BlogItem from "../../components/BlogItem";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import { blogs } from "../../data/mockdata";
 
 export interface BlogProps {}
 
 const Blog: React.FC<BlogProps> = () => {
+  const blogsQuery = useQuery("blog", getBlogs);
+
   return (
     <div>
       <Head>
@@ -15,9 +18,10 @@ const Blog: React.FC<BlogProps> = () => {
       </Head>
       <Navbar black />
       <div className="flex flex-wrap justify-center">
-        {blogs.map((blog, blogIdx) => (
-          <BlogItem {...blog} key={blogIdx} />
-        ))}
+        {blogsQuery.status === "success" &&
+          blogsQuery.data.items.map((blog: any, blogIdx: number) => (
+            <BlogItem {...blog} key={blogIdx} />
+          ))}
       </div>
       <Footer />
     </div>
