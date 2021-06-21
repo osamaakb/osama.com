@@ -8,6 +8,7 @@ function PrevArrowIcon(props: React.SVGProps<SVGSVGElement>) {
       viewBox="0 0 35 26"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <line
         x1="32.7047"

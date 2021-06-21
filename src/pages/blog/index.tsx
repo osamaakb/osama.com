@@ -18,7 +18,7 @@ const Blog: React.FC<BlogProps> = () => {
       </Head>
       <Navbar black />
       <div className="flex flex-wrap justify-center">
-        {blogsQuery.status === "success" &&
+        {blogsQuery.isSuccess &&
           blogsQuery.data.items.map((blog: any, blogIdx: number) => (
             <BlogItem {...blog} key={blogIdx} />
           ))}
