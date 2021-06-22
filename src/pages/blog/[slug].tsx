@@ -19,6 +19,7 @@ const BlogDetails: React.FC = () => {
     thumbnail: "",
     content: "",
   };
+
   const [blog, setBlog] = useState<BlogProps>(initialBlogState);
   const [blogIdx, setBlogIdx] = useState<number>(0);
 
@@ -39,7 +40,8 @@ const BlogDetails: React.FC = () => {
 
   if (blogsQuery.isError) return <div>error loading blogs</div>;
 
-  if (blogsQuery.isSuccess) return (
+  if (blogsQuery.isSuccess)
+    return (
       <div>
         <Navbar black />
         <div className="px-52">
