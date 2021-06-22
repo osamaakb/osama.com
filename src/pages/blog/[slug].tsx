@@ -70,7 +70,7 @@ const BlogDetails: React.FC = () => {
               </a>
             </Link>
           )}
-          {blogIdx !== blogsQuery.data.items.length && (
+          {blogIdx === blogsQuery.data.items.length && (
             <Link href={`/blog/${blogsQuery.data.items[blogIdx + 1].title}`}>
               <a className="flex items-centers lg:w-2/6 justify-end">
                 <span className="pr-2 text-xl text-center">
