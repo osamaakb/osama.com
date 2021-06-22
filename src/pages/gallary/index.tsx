@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import React from "react";
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
 export interface GallaryProps {}
@@ -17,61 +17,56 @@ const Gallary: React.FC<GallaryProps> = () => {
       <div>
         <img
           src="/gallary/mountains.jpg"
-          alt="personal picture"
-          className="w-full h-full mb-3"
+          alt="mountains"
+          className="w-full h-full mb-2"
         />
       </div>
-      {/* <div className="flex flex-wrap gap-3">
-        <img
-          src="/gallary/taksim.jpg"
-          className="object-contain h-full flex-grow"
-          style={{ verticalAlign: "bottom" }}
-        />
-        <img
-          src="/gallary/ferry.jpg"
-          className="object-contain h-full flex-grow"
-          style={{ verticalAlign: "bottom" }}
-        />
-      </div> */}
-
-      <ul className="flex flex-wrap gap-3">
+      <ul className="flex flex-nowrap gap-2 justify-between">
         <li className="flex-grow">
           <img
             src="/gallary/taksim.jpg"
-            className="min-w-full object-contain max-h-full"
+            className="object-contain w-full h-full"
             style={{ verticalAlign: "bottom" }}
+            alt="taksim street"
           />
         </li>
         <li className="flex-grow">
           <img
             src="/gallary/ferry.jpg"
-            className="min-w-full object-contain max-h-full"
+            className="object-contain w-full h-full"
+            alt="ferry"
             style={{ verticalAlign: "bottom" }}
           />
         </li>
       </ul>
+      <div>
+        <img
+          src="/gallary/ayasofia.jpg"
+          alt="aya sofia mosque"
+          className="my-2"
+        />
+      </div>
+      <ul className="flex flex-nowrap gap-2 justify-between">
+        <li className="flex-grow">
+          <img
+            src="/gallary/sky.jpg"
+            className="object-contain w-full h-full"
+            style={{ verticalAlign: "bottom" }}
+            alt="purple sky"
+          />
+        </li>
+        <li className="flex-grow">
+          <img
+            src="/gallary/street.jpg"
+            className="object-contain w-full h-full"
+            alt="street and people"
+            style={{ verticalAlign: "bottom" }}
+          />
+        </li>
+      </ul>
+      <Footer />
     </div>
   );
 };
 
 export default Gallary;
-
-{
-  /* <div className="flex flex-wrap">
-<div style={{ flex: "50%", maxWidth: "50%" }}>
-  <img
-    src="/gallary/ferry.jpg"
-    className=" w-full"
-    style={{ verticalAlign: "middle" }}
-  />
-  <img src="/gallary/taksim.jpg" className="object-contain w-full" />
-</div>
-<div style={{ flex: "50%", maxWidth: "50%" }}>
-  <img
-    src="/gallary/taksim.jpg"
-    className="w-full"
-    style={{ verticalAlign: "middle" }}
-  />
-</div>
-</div> */
-}
