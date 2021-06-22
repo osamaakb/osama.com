@@ -60,7 +60,7 @@ const BlogDetails: React.FC = () => {
           <hr className="border-t border-black w-full" />
         </div>
         <div className="px-16 flex justify-between items-center">
-          {blogIdx !== 0 && (
+          {blogIdx !== 0 ? (
             <Link href={`/blog/${blogsQuery.data.items[blogIdx - 1].title}`}>
               <a className="flex items-centers lg:w-2/6 justify-start">
                 <PrevArrowIcon />
@@ -69,8 +69,10 @@ const BlogDetails: React.FC = () => {
                 </span>
               </a>
             </Link>
+          ) : (
+            <div className="w-full"></div>
           )}
-          {blogIdx === blogsQuery.data.items.length && (
+          {blogIdx + 1 !== blogsQuery.data.items.length && (
             <Link href={`/blog/${blogsQuery.data.items[blogIdx + 1].title}`}>
               <a className="flex items-centers lg:w-2/6 justify-end">
                 <span className="pr-2 text-xl text-center">
