@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React from "react";
 import { useQuery } from "react-query";
 import { getBlogs } from "../../api/Blog";
@@ -8,6 +9,7 @@ import Carousel from "../Carousel";
 export interface BlogsCarouselProps {}
 
 const BlogsCarousel: React.FC<BlogsCarouselProps> = () => {
+  const router = useRouter();
   const blogsQuery = useQuery("blog", getBlogs);
 
   return (
@@ -22,7 +24,13 @@ const BlogsCarousel: React.FC<BlogsCarouselProps> = () => {
           ))}
       </Carousel>
       <div className="text-center p-16">
-        <Button handleClick={() => {}}>View All</Button>
+        <Button
+          handleClick={() => {
+            router.push("/blog");
+          }}
+        >
+          View All
+        </Button>
       </div>
     </div>
   );
