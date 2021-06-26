@@ -28,10 +28,10 @@ const About: React.FC<AboutProps> = () => {
           <Navbar />
         </div>
       </div>
-      <div className="px-36 py-14">
+      <div className="lg:px-36 md:px-32 sm:px-24 px-8 lg:py-14 md:py-14 sm:py-8 py-8">
         <h1 className="text-4xl font-bold">Hello!</h1>
         <p className="text-2xl py-3">MY NAME’S OSAMA</p>
-        <p className="font-thin">
+        <p className="font-thin text-justify">
           I’m a DP & Director based in Sydney, Australia, specialising in social
           media content and short-form film production. I produce my work
           through my company, ritchieollie, doing projects that range from

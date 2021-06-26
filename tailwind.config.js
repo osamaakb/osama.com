@@ -30,7 +30,7 @@ module.exports = {
         }
       },
       animation: {
-        fade: 'fadeIn linear 0.5s'
+        fade: 'fadeIn linear 0.3s'
       },
       keyframes: {
         fadeIn: {

@@ -7,12 +7,14 @@ const NewsLetter: React.FC<NewsLetterProps> = () => {
   return (
     <div className="bg-gray-200 flex flex-col items-center">
       <div className="flex justify-center items-center">
-        <h1 className="text-4xl pt-12">Susbscribe to my newsletter</h1>
+        <h1 className="lg:text-4xl md:text-4xl sm:text-4xl text-2xl pt-12">
+          Susbscribe to my newsletter
+        </h1>
       </div>
       <form>
         <div className="pt-10 pb-14 flex justify-center">
           <input
-            className="border-primary border h-12 w-80 outline-none p-3"
+            className="border-primary border lg:h-12 md:h-12 lg:w-80 md:w-80 sm:w-80 outline-none p-3"
             height={200}
             placeholder="Enter Address"
             value={emailInputValue}

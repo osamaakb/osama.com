@@ -2,6 +2,8 @@ import Head from "next/head";
 import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+// import mountain from "../../../public/gallary/mountains.jpg";
+// @todo use next js new Image and use the blue effect
 
 export interface GallaryProps {}
 
@@ -21,8 +23,8 @@ const Gallary: React.FC<GallaryProps> = () => {
           className="w-full h-full mb-2"
         />
       </div>
-      <ul className="flex flex-nowrap gap-2 justify-between">
-        <li className="flex-grow">
+      <ul className="lg:flex md:flex sm:block block flex-nowrap gap-2 justify-between">
+        <li className="flex-grow sm:pb-2 pb-2 md:py-0 lg:py-0">
           <img
             src="/gallary/taksim.jpg"
             className="object-contain w-full h-full"
@@ -43,11 +45,11 @@ const Gallary: React.FC<GallaryProps> = () => {
         <img
           src="/gallary/ayasofia.jpg"
           alt="aya sofia mosque"
-          className="my-2"
+          className="my-2 w-full h-full"
         />
       </div>
-      <ul className="flex flex-nowrap gap-2 justify-between">
-        <li className="flex-grow">
+      <ul className="lg:flex md:flex sm:block block flex-nowrap gap-2 justify-between">
+        <li className="flex-grow  sm:pb-2 pb-2 md:pb-0 lg:pb-0">
           <img
             src="/gallary/sky.jpg"
             className="object-contain w-full h-full"

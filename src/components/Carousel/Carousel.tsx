@@ -9,7 +9,6 @@ export interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ children, sliderSettings }) => {
-  // @todo make this responsive
   const settings = {
     infinite: true,
     speed: 500,
@@ -35,6 +34,18 @@ const Carousel: React.FC<CarouselProps> = ({ children, sliderSettings }) => {
           centerPadding: "10px",
           arrows: false,
           slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          centerPadding: "30px",
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: false,

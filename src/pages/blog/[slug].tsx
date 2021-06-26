@@ -40,15 +40,14 @@ const BlogDetails: React.FC = () => {
 
   if (blogsQuery.isError) return <div>error loading blogs</div>;
 
-  if (blogsQuery.isSuccess)
-    return (
+  if (blogsQuery.isSuccess) return (
       <div>
         <Navbar black />
-        <div className="px-52">
+        <div className="lg:px-52 md:px-32 sm:px-8 px-8">
           <h1 className="text-4xl py-4">
             {blogsQuery.data.items[blogIdx].title}
           </h1>
-          <span className="text-xl leading-8 text-justify">
+          <span className="text-xl leading-8 lg:text-justify md:text-justify sm:text-justify w-screen">
             {reactHtmlParser(blogsQuery.data.items[blogIdx].content)}
           </span>
         </div>
@@ -59,12 +58,12 @@ const BlogDetails: React.FC = () => {
           </p>
           <hr className="border-t border-black w-full" />
         </div>
-        <div className="px-16 flex justify-between items-center">
+        <div className="lg:px-16 md:px-16 sm:px-4 px-4 flex justify-between items-center">
           {blogIdx !== 0 ? (
             <Link href={`/blog/${blogsQuery.data.items[blogIdx - 1].title}`}>
               <a className="flex items-centers lg:w-2/6 justify-start">
                 <PrevArrowIcon />
-                <span className="pl-2 text-xl text-center">
+                <span className="lg:pl-2 md:pl-2 sm:pl-1 pl-1  text-xl text-center">
                   {blogsQuery.data.items[blogIdx - 1].title}
                 </span>
               </a>
@@ -75,7 +74,7 @@ const BlogDetails: React.FC = () => {
           {blogIdx + 1 !== blogsQuery.data.items.length && (
             <Link href={`/blog/${blogsQuery.data.items[blogIdx + 1].title}`}>
               <a className="flex items-centers lg:w-2/6 justify-end">
-                <span className="pr-2 text-xl text-center">
+                <span className="lg:pr-2 md:pr-2 sm:pr-1 pr-1 text-xl text-center">
                   {blogsQuery.data.items[blogIdx + 1].title}
                 </span>
                 <NextArrowIcon />

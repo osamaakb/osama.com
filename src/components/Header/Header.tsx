@@ -22,13 +22,13 @@ const Header: React.FC<HeaderProps> = () => {
           objectFit="cover"
         />
         <div className="h-screen w-screen absolute bg-primary opacity-40"></div>
-        <div className="text-white h-screen w-2/4 flex justify-center items-start flex-col z-10 absolute right-0">
-          <div>
-            <h1 className="text-left ml-2 text-4xl mb-4 leading-snug">
+        <div className="text-white h-screen lg:w-2/4 md:w-2/4 sm:w-full w-full flex justify-center items-start flex-col z-10 absolute right-0 p-8 lg:p-0 md:p-0 sm:p-0">
+          <div className="">
+            <h1 className="text-left ml-2 text-4xl lg:mb-4 md:mb-4 sm:mb-4 mb-16 leading-snug">
               <b>Every coder has their journey.</b> <br />
               <span className="text-3xl">This is mine.</span>
             </h1>
-            <div className="flex">
+            <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row">
               {NAV_ITEMS.map(({ title, path }, itemIdx) => {
                 return (
                   <Button
@@ -41,12 +41,14 @@ const Header: React.FC<HeaderProps> = () => {
                 );
               })}
             </div>
-            <div className="ml-1 flex mt-4">
+            <div className="ml-1 lg:flex md:flex mt-4 sm:hidden hidden">
               <SocialIcons />
             </div>
           </div>
         </div>
-        <DownArrowIcon className="text-white absolute my-3 bottom-0 right-1/2 animate-bounce" />
+        <div className="flex justify-center">
+          <DownArrowIcon className="text-white absolute my-3 bottom-0 animate-bounce" />
+        </div>
       </div>
     </div>
   );
