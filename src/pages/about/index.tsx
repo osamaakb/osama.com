@@ -23,7 +23,7 @@ const About: React.FC<AboutProps> = () => {
             />
           </div>
         </div>
-        <div className="absolute opacity-25 bg-black w-full h-full"></div>
+        <div className="absolute opacity-50 bg-black w-full h-full"></div>
         <div className="absolute left-0 right-0">
           <Navbar />
         </div>

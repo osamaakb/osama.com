@@ -22,13 +22,11 @@ const Navbar: React.FC<NavbarProps> = ({ black }) => {
   };
 
   const isSelected = (path: string) => {
-    return router.pathname === path
-      ? `border-b-2 opacity-100 pb-1 border-${color}`
-      : "";
+    return router.pathname === path ? `opacity-100` : "";
   };
 
   return (
-    <div className="flex justify-between items-center lg:px-16 px-4 sm:px-4 md:px-8 lg:py-8 py-4 sm:py-4 md:py-8 bg-transparent">
+    <div className="flex justify-between items-center lg:px-16 px-4 sm:px-4 md:px-8 lg:py-8 py-6 sm:py-6 md:py-8 bg-transparent">
       <Link href="/">
         <a className={`text-${color} text-base`}>Osama</a>
       </Link>
