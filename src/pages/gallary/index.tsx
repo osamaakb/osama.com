@@ -2,8 +2,6 @@ import Head from "next/head";
 import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-// import mountain from "../../../public/gallary/mountains.jpg";
-// @todo use next js new Image and use the blue effect
 
 export interface GallaryProps {}
 
