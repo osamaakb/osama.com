@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = () => {
               <br />
               {/* <span className="text-3xl">This is mine.</span> */}
             </h1>
-            <div className="flex flex-row justify-center">
+            <div className="flex flex-row lg:justify-start md:justify-start sm:justify-center justify-center">
               {NAV_ITEMS.map(({ title, path }, itemIdx) => {
                 return (
                   <Button
