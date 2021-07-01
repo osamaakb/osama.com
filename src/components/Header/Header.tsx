@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { NAV_ITEMS } from "../../data/NavItems";
 import DownArrowIcon from "../../Icons/DownArrow";
@@ -36,8 +35,6 @@ const Header: React.FC<HeaderProps> = () => {
                 I teach code and make programs that aim to make people’s life
                 better.
               </b>
-              <br />
-              {/* <span className="text-3xl">This is mine.</span> */}
             </h1>
             <div className="flex flex-row lg:justify-start md:justify-start sm:justify-center justify-center">
               {NAV_ITEMS.map(({ title, path }, itemIdx) => {
