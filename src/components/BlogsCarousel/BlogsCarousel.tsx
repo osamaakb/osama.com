@@ -6,9 +6,7 @@ import BlogItem from "../BlogItem";
 import Button from "../Button/Button";
 import Carousel from "../Carousel";
 
-export interface BlogsCarouselProps {}
-
-const BlogsCarousel: React.FC<BlogsCarouselProps> = () => {
+const BlogsCarousel: React.FC = () => {
   const router = useRouter();
   const blogsQuery = useQuery("blog", getBlogs);
 

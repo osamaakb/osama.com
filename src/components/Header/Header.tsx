@@ -5,9 +5,7 @@ import Button from "../Button/Button";
 import SocialIcons from "../SocialIcons";
 import { useRouter } from "next/router";
 
-export interface HeaderProps {}
-
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC = () => {
   const router = useRouter();
 
   return (

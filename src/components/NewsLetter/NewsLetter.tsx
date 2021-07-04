@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 
-export interface NewsLetterProps {}
-
-const NewsLetter: React.FC<NewsLetterProps> = () => {
+const NewsLetter: React.FC = () => {
   const [emailInputValue, setEmailInputValue] = useState("");
   return (
     <div className="bg-gray-200 flex flex-col items-center">
       <div className="flex justify-center items-center">
         <h1 className="lg:text-4xl md:text-4xl sm:text-4xl text-2xl pt-12">
-          Susbscribe to my newsletter
+          Susbscribe to my newsletter (WIP)
         </h1>
       </div>
       <form>
