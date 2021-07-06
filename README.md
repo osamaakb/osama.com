@@ -31,7 +31,7 @@ Yes, you can, this project is open source which means any one can `fork` it and 
 
 I know it doesn't make much sense to participate in such a project, but just to let you know that it *is possible*, you will only get one thing out of it, a `code review` (:
 
-another way to participate is submitting issues, you can go to the issues tab and create a new issue you found in the website like a bug or error.
+another way to participate is submitting `issues`, you can go to the `issues` tab and create a new issue you found in the website like a bug or error.
 
 ## To Start the project
 - `fork` this repo
