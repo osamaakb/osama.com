@@ -19,6 +19,7 @@ Now we go to the design phase, I have some experience in UI/UX to design a small
 - [pretteir](https://prettier.io/): for formatting the code, pretteir is used to format your code indentation and syntax and making sure it follows the code style you provided in the pretteir config file, for example, replace all single quotations `'` with double quotations `"`.
 - [Vercel](https://vercel.com/dashboard): for hosting, later on development you will have to make your website accessible by any one online, this is why you will need to host your website, there are many ways to do this, like buying a server subscription and hosting your work there, or just by using vercel or [netlify](https://www.netlify.com/) (which is way easier).
 - [react-query](https://react-query.tanstack.com/): for better data synchronization, in easier terms, it helps you cache your fetched data, control data when background updates, and other things related to data synchronization.
+- [medium api]()
 
 ### Other useful packages and services I recommend you to add to your project (My project isn't that big so I didn't bother adding them)
 - [Jest](https://jestjs.io/docs/getting-started) for testing: it is very important to test your code before sending it to production, testing is a fast way to ensure that your code is working fine with no errors.
