@@ -35,7 +35,7 @@ const Header: React.FC = () => {
               </b>
             </h1>
             <div className="flex flex-row lg:justify-start md:justify-start sm:justify-center justify-center">
-              {NAV_ITEMS.map(({ title, path }, itemIdx) => {
+              {NAV_ITEMS.slice(1).map(({ title, path }, itemIdx) => {
                 return (
                   <Button
                     key={itemIdx}

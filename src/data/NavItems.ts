@@ -5,6 +5,10 @@ interface NavItemsProps {
 
 export const NAV_ITEMS: NavItemsProps[] = [
   {
+    title: "Home",
+    path: "/",
+  },
+  {
     title: "Blog",
     path: "/blog",
   },
