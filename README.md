@@ -26,6 +26,9 @@ Now we go to the design phase, I have some experience in UI/UX to design a small
 - [Husky](https://typicode.github.io/husky/#/?id=install): to improve writing your git commit message, and run liniting and testing all at once.
 - I will add more as they come to mind
 
+### Project structure
+This is totally up to you, but try to separate the concerns as much as you can, `component` and `pages` are two main folders you shouldn't start without, others are up to you, for example I have a folder for icons, to export all `svg` icons as react components and use them later to beautify my code and make it easier to read, since you customize the imported `svg` files and I don't want to use `inline svg`, as I said, it is all up to you and your use case. Just make it clean and take care of the readibility.
+
 ### Can you participate in this project?
 Yes, you can, this project is open source which means any one can `fork` it and do their changes on a *new branch*, then submit a `pull request` so I can review and merge it later.
 
