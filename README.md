@@ -19,7 +19,7 @@ Now we go to the design phase, I have some experience in UI/UX to design a small
 - [pretteir](https://prettier.io/): for formatting the code, pretteir is used to format your code indentation and syntax and making sure it follows the code style you provided in the pretteir config file, for example, replace all single quotations `'` with double quotations `"`.
 - [Vercel](https://vercel.com/dashboard): for hosting, later on development you will have to make your website accessible by any one online, this is why you will need to host your website, there are many ways to do this, like buying a server subscription and hosting your work there, or just by using vercel or [netlify](https://www.netlify.com/) (which is way easier).
 - [react-query](https://react-query.tanstack.com/): for better data synchronization, in easier terms, it helps you cache your fetched data, control data when background updates, and other things related to data synchronization.
-- [medium api](https://github.com/Medium/medium-api-docs#22-self-issued-access-tokens): to fetch my medium posts, however, I'm not actually using the api, it is very limited, I'm using another way which is converting the `RSS` response I receive from call this `https://medium.com/feed/@osamaakb` and convert that to JSON using this site `https://rss2json.com`, it is a bit of a work I know but medium's api doesn't give you the full article content.
+- [medium api](https://github.com/Medium/medium-api-docs#22-self-issued-access-tokens): to fetch my medium posts, however, I'm not actually using the api, it is very limited, I'm using another way which is converting the `RSS` response I receive from calling this `https://medium.com/feed/@osamaakb` and convert that to JSON using this site `https://rss2json.com`, it is a bit of a work I know but medium's api doesn't give you the full article content.
 
 ### Other useful packages and services I recommend you to add to your project (My project isn't that big so I didn't bother adding them)
 - [Jest](https://jestjs.io/docs/getting-started) for testing: it is very important to test your code before sending it to production, testing is a fast way to ensure that your code is working fine with no errors.
@@ -30,6 +30,8 @@ Now we go to the design phase, I have some experience in UI/UX to design a small
 Yes, you can, this project is open source which means any one can `fork` it and do their changes on a *new branch*, then submit a `pull request` so I can review and merge it later.
 
 I know it doesn't make much sense to participate in such a project, but just to let you know that it *is possible*, you will only get one thing out of it, a `code review` (:
+
+another way to participate is submitting `issues`, you can go to the `issues` tab and create a new issue you found in the website like a bug or error.
 
 ## To Start the project
 - `fork` this repo
