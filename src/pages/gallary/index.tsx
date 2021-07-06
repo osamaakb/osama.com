@@ -3,9 +3,7 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
-export interface GallaryProps {}
-
-const Gallary: React.FC<GallaryProps> = () => {
+const Gallary: React.FC = () => {
   return (
     <div>
       <Head>
