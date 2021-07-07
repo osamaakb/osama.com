@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ### Plannign this project
 
 #### Planning
-I started thinking about the pages I will need and what content will be there, picked up the tools and services I will need to build this project, after that I just wrote my ideas in a github [gist](https://gist.github.com/) to organize them a bit (it turned up not really organized to be honest), [here](https://gist.github.com/osamaakb/56ae5997e75a06a1052be09a9ab27cf0) is that gist for reference, it may not look very clear as it was my scratch board.
+I started thinking about the pages I will need and what content will be there, picked up the tools and services I will use to build this project, after that I just wrote my ideas in a github [gist](https://gist.github.com/) to organize them a bit (it turned up not really organized to be honest), [here](https://gist.github.com/osamaakb/56ae5997e75a06a1052be09a9ab27cf0) is that gist for reference, it may not look very clear as it was my scratch board.
 
 #### Design
 Now we go to the design phase, I have some experience in UI/UX to design a small website like this one, also I wanted it to represent me, so I went ahead and opened a new [Figma](https://www.figma.com/) file and started putting the design together, I didn't make a fully professional design, so you won't find a color pallette or responsive design, [here](https://www.figma.com/file/yVausHLif05C8cIiUVQN16/Portofolio?node-id=0%3A1) is my figma file for reference, the data their is just a place holder (not real data).
