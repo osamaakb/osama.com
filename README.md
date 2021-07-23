@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ### Plannign this project
 
 #### Planning
-I started thinking about the pages I will need and what content will be there, picked up the tools and services I will need to build this project, after that I just wrote my ideas in a github [gist](https://gist.github.com/) to organize them a bit (it turned up not really organized to be honest), [here](https://gist.github.com/osamaakb/56ae5997e75a06a1052be09a9ab27cf0) is that gist for reference, it may not look very clear as it was my scratch board.
+I started thinking about the pages I will need and what content will be there, picked up the tools and services I will use to build this project, after that I just wrote my ideas in a github [gist](https://gist.github.com/) to organize them a bit (it turned up not really organized to be honest), [here](https://gist.github.com/osamaakb/56ae5997e75a06a1052be09a9ab27cf0) is that gist for reference, it may not look very clear as it was my scratch board.
 
 #### Design
 Now we go to the design phase, I have some experience in UI/UX to design a small website like this one, also I wanted it to represent me, so I went ahead and opened a new [Figma](https://www.figma.com/) file and started putting the design together, I didn't make a fully professional design, so you won't find a color pallette or responsive design, [here](https://www.figma.com/file/yVausHLif05C8cIiUVQN16/Portofolio?node-id=0%3A1) is my figma file for reference, the data their is just a place holder (not real data).
@@ -25,6 +25,9 @@ Now we go to the design phase, I have some experience in UI/UX to design a small
 - [Jest](https://jestjs.io/docs/getting-started) for testing: it is very important to test your code before sending it to production, testing is a fast way to ensure that your code is working fine with no errors.
 - [Husky](https://typicode.github.io/husky/#/?id=install): to improve writing your git commit message, and run liniting and testing all at once.
 - I will add more as they come to mind
+
+### Project structure
+This is totally up to you, but try to separate the concerns as much as you can, `component` and `pages` are two main folders you shouldn't start without, others are up to you, for example I have a folder for icons, to export all `svg` icons as react components and use them later to beautify my code and make it easier to read, since you customize the imported `svg` files and I don't want to use `inline svg`, as I said, it is all up to you and your use case. Just make it clean and take care of the readibility.
 
 ### Can you participate in this project?
 Yes, you can, this project is open source which means any one can `fork` it and do their changes on a *new branch*, then submit a `pull request` so I can review and merge it later.
