@@ -40,7 +40,7 @@ export default function Home() {
         </h1>
       </div>
       <BlogsCarousel />
-      <NewsLetter />
+      {/* <NewsLetter /> */}
       <Footer />
     </div>
   );
