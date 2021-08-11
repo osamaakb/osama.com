@@ -13,6 +13,10 @@ export const NAV_ITEMS: NavItemsProps[] = [
     path: "/blog",
   },
   {
+    title: "Projects",
+    path: "/projects",
+  },
+  {
     title: "Gallary",
     path: "/gallary",
   },
