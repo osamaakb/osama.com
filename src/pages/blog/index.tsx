@@ -3,6 +3,7 @@ import React from "react";
 import { useQuery, useQueryClient } from "react-query";
 import { getBlogs } from "../../api/Blog";
 import BlogItem from "../../components/BlogItem";
+import Delayed from "../../components/Delayed";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
@@ -17,10 +18,12 @@ const Blog: React.FC<BlogProps> = () => {
         <title>Blog</title>
       </Head>
       <Navbar black />
-      <div className="flex flex-wrap justify-center">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 lg:mx-12 md:mx-4 sm:mx-2  ">
         {blogsQuery.isSuccess &&
           blogsQuery.data.items.map((blog: any, blogIdx: number) => (
-            <BlogItem {...blog} key={blogIdx} />
+            <Delayed waitBeforeShow={200 * blogIdx}>
+              <BlogItem {...blog} key={blogIdx} />
+            </Delayed>
           ))}
       </div>
       <Footer />

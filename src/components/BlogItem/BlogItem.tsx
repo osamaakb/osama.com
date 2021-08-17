@@ -12,7 +12,7 @@ const BlogItem: React.FC<BlogProps> = ({ thumbnail, title, content }) => {
   return (
     <Link href={`/blog/${title}`}>
       <a aria-label="open block">
-        <div className="lg:m-11 md:m-6 sm:mx-2 sm:my-5 max-w-sm my-5 mx-4 lg:mx-4 md:mx-4">
+        <div className="lg:m-8 md:m-6 sm:mx-2 sm:my-5 my-5 mx-4 lg:mx-4 md:mx-4 animate-fade">
           <div className="h-56 relative w-full">
             <Image
               src={thumbnail}
