@@ -27,8 +27,8 @@ export default function Home() {
         />
         <p className="lg:text-3xl md:text-3xl sm:text-3xl text-xl lg:leading-snug md:leading-snug sm:leading-snug leading-relaxed lg:my-3 md:my-3 sm:my-3 my-1">
           I’m an Iraqi software engineer living and working in Istanbul. I love
-          creating things, writing blogs, taking photos, and speaking at
-          conferences.
+          creating things with code, writing blogs, taking photos, and speaking
+          at conferences.
         </p>
         <Link href="/about">
           <a className="text-gray-400 underline text-xl">More about me?</a>
