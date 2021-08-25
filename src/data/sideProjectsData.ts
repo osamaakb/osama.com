@@ -63,7 +63,9 @@ export const sideProjcets: SideProject[] = [
         title: "osama.com",
         description: "my portofolio website",
         story: "This is a personal projcet for my website, this repo is public to help beginners starting with react or next js by taking a look at the code and this readme. \n This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
-        img: "/projectsImages/osama.com.png"
+        img: "/projectsImages/osama.com.png",
+        repoLink: "https://github.com/osamaakb/osama.com",
+        demoLink: "osama.vercel.app"
     },
     {
         id: "5",
@@ -82,6 +84,8 @@ export const sideProjcets: SideProject[] = [
         - Vanilla JS
         - Firebase Auth and Firestore Database
         `,
+        demoLink: "https://osamaakb.github.io/mentorship/",
+        repoLink: "https://github.com/osamaakb/mentorship",
         img: "/projectsImages/m&m.png"
     }
 ]

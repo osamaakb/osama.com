@@ -15,15 +15,7 @@ const Projects: React.FC = () => {
       <div className="lg:mx-12 md:mx-4 sm:mx-0 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 px-4">
         {sideProjcets.map(
           (
-            {
-              title,
-              img,
-              id,
-              repoLink,
-              demoLink,
-              story,
-              description,
-            }: SideProject,
+            { title, img, id, repoLink, demoLink, description }: SideProject,
             i
           ) => {
             return (
@@ -38,9 +30,11 @@ const Projects: React.FC = () => {
                       <a href={repoLink} className="underline">
                         repo
                       </a>
-                      <a href={demoLink} className="underline ml-2">
-                        demo
-                      </a>
+                      {demoLink && (
+                        <a href={demoLink} className="underline ml-2">
+                          demo
+                        </a>
+                      )}
                     </div>
                   </div>
                 </Link>
