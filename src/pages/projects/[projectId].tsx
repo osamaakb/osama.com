@@ -4,13 +4,34 @@ import { sideProjcets, SideProject } from "../../data/sideProjectsData";
 import Link from "next/link";
 import Footer from "../../components/Footer";
 import marked from "marked";
+import { useEffect, useState } from "react";
 
 const ProjectDetails: React.FC = () => {
   const router = useRouter();
-  const projectId = router.query.slug;
 
-  const { title, img, demoLink, repoLink, story, screenShots }: SideProject =
-    sideProjcets.filter((project) => project.id === projectId)[0];
+  const initialProject: SideProject = {
+    title: "",
+    img: "",
+    description: "",
+    story: "",
+    screenShots: "",
+    demoLink: "",
+    repoLink: "",
+    id: "",
+  };
+
+  const [{ title, img, demoLink, repoLink, story, screenShots }, setProject] =
+    useState(initialProject);
+
+  useEffect(() => {
+    if (!router.isFallback) {
+      console.log(router.query);
+    }
+  }, [router.isFallback]);
+
+  if (router.isFallback) {
+    return <p>loading...</p>;
+  }
 
   return (
     <div>
@@ -32,7 +53,7 @@ const ProjectDetails: React.FC = () => {
         <div className="grid lg:grid-cols-6 md:grid-cols-2 sm:grid-cols-1">
           {screenShots &&
             screenShots.split(",").map((screen) => {
-              return <img src={screen} alt="screenshot" />;
+              return <img src={screen} alt="screenshot" key={screen} />;
             })}
         </div>
         <br />
