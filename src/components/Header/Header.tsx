@@ -27,7 +27,7 @@ const Header: React.FC = () => {
                 better.
               </b>
             </h1>
-            <div className="flex flex-row lg:justify-start md:justify-start sm:justify-center justify-center">
+            <div className="flex flex-row lg:justify-start md:justify-start sm:justify-center justify-center flex-wrap">
               {NAV_ITEMS.slice(1).map(({ title, path }, itemIdx) => {
                 return (
                   <Button
