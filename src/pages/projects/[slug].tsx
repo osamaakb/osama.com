@@ -20,6 +20,7 @@ const ProjectDetails: React.FC = () => {
           <a className="underline">{"<-"} back</a>
         </Link>
         <h1 className="text-3xl my-8">{title}</h1>
+        <ReactMarkdown children={story} />
         {img && (
           <img
             src={img}
@@ -27,7 +28,7 @@ const ProjectDetails: React.FC = () => {
             className="text-center w-full object-contain lg:h-screen-3/4 md:h-screen-1/2 sm:h-screen-1/3"
           />
         )}
-        <h1 className="text-3xl my-8">Mobile app</h1>
+        {screenShots && <h1 className="text-3xl my-8">Mobile app</h1>}
         <div className="grid lg:grid-cols-6 md:grid-cols-2 sm:grid-cols-1">
           {screenShots &&
             screenShots.split(",").map((screen) => {
@@ -35,7 +36,6 @@ const ProjectDetails: React.FC = () => {
             })}
         </div>
         <br />
-        <ReactMarkdown children={story} />
         <div className="flex">
           <a className="underline text-gray-700" href={demoLink}>
             demo

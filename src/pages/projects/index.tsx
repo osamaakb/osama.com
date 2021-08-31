@@ -4,6 +4,7 @@ import React from "react";
 import Delayed from "../../components/Delayed";
 import Navbar from "../../components/Navbar";
 import { sideProjcets, SideProject } from "../../data/sideProjectsData";
+import Footer from "../../components/Footer";
 
 const Projects: React.FC = () => {
   return (
@@ -43,6 +44,7 @@ const Projects: React.FC = () => {
           }
         )}
       </div>
+      <Footer />
     </div>
   );
 };
