@@ -18,13 +18,6 @@ const Header: React.FC = () => {
           backgroundSize: "cover",
         }}
       >
-        {/* <Image
-          alt="photo of osama"
-          layout="fill"
-          src="/landingpage.jpg"
-          objectFit="cover"
-          className="lg:object-center md:object-center sm:object-left object-left"
-        /> */}
         <div className="h-screen w-screen absolute bg-primary opacity-40"></div>
         <div className="text-white h-screen lg:w-2/4 md:w-2/4 sm:w-full w-full z-10 absolute right-0 p-4 lg:p-0 md:p-0 sm:p-4">
           <div className="flex flex-col h-full justify-center px-2">

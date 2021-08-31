@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import Navbar from "../../components/Navbar";
 import { sideProjcets, SideProject } from "../../data/sideProjectsData";
-import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 import Footer from "../../components/Footer";
+import marked from "marked";
 
 const ProjectDetails: React.FC = () => {
   const router = useRouter();
@@ -20,7 +20,7 @@ const ProjectDetails: React.FC = () => {
           <a className="underline">{"<-"} back</a>
         </Link>
         <h1 className="text-3xl my-8">{title}</h1>
-        <ReactMarkdown children={story} />
+        <div dangerouslySetInnerHTML={{ __html: marked(story || "") }} />
         {img && (
           <img
             src={img}

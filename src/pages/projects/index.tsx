@@ -23,7 +23,8 @@ const Projects: React.FC = () => {
               <Delayed waitBeforeShow={i * 200} key={id}>
                 <Link href={`/projects/${id}`}>
                   <div className="animate-fade p-8 border border-black flex-col text-left hover:border-transparent cursor-pointer">
-                    <h1 aria-label="title" className="font-bold mb-2">
+                    {img && <img src={img} alt="poster" />}
+                    <h1 aria-label="title" className="font-bold my-2">
                       {title}
                     </h1>
                     <p aria-label="description">{description}</p>
