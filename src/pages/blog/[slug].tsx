@@ -18,6 +18,7 @@ const BlogDetails: React.FC = () => {
     title: "",
     thumbnail: "",
     content: "",
+    link: "",
   };
 
   const [blog, setBlog] = useState<BlogProps>(initialBlogState);
@@ -34,16 +35,19 @@ const BlogDetails: React.FC = () => {
           )
         )
       );
-      // setBlog(blogsQuery.data.items[blogIdx]);
     }
   }, [blogsQuery.data, router.query.slug]);
 
   if (blogsQuery.isError) return <div>error loading blogs</div>;
 
-  if (blogsQuery.isSuccess) return (
+  if (blogsQuery.isSuccess)
+    return (
       <div>
         <Navbar black />
         <div className="lg:px-52 md:px-32 sm:px-8 px-8">
+          <a href={blogsQuery.data.items[blogIdx].link} className="underline">
+            Read on Medium
+          </a>
           <h1 className="text-4xl py-4">
             {blogsQuery.data.items[blogIdx].title}
           </h1>

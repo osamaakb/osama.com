@@ -18,7 +18,17 @@ const Blog: React.FC<BlogProps> = () => {
         <title>Blog</title>
       </Head>
       <Navbar black />
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 lg:mx-12 md:mx-4 sm:mx-2  ">
+      <h1 className="lg:mx-16 md:mx-4 sm:mx-2 text-lg">
+        You can visit my Medium account{" "}
+        <a
+          href="https://osamaakb.medium.com/"
+          className="text-black underline font-bold"
+        >
+          here
+        </a>{" "}
+        For better reading experience
+      </h1>
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 lg:mx-12 md:mx-4 sm:mx-2">
         {blogsQuery.isSuccess &&
           blogsQuery.data.items.map((blog: any, blogIdx: number) => (
             <Delayed waitBeforeShow={200 * blogIdx}>
