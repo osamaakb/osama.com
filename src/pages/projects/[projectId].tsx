@@ -1,3 +1,4 @@
+import React from "react";
 import { useRouter } from "next/router";
 import Navbar from "../../components/Navbar";
 import { sideProjcets, SideProject } from "../../data/sideProjectsData";
@@ -8,6 +9,7 @@ import { useEffect, useState } from "react";
 
 const ProjectDetails: React.FC = () => {
   const router = useRouter();
+  let projectId = React.useMemo(() => router.query.projectId, [router.query]);
 
   const initialProject: SideProject = {
     title: "",
@@ -21,13 +23,13 @@ const ProjectDetails: React.FC = () => {
   };
 
   const [{ title, img, demoLink, repoLink, story, screenShots }, setProject] =
-    useState(initialProject);
+    useState<SideProject>(initialProject);
 
   useEffect(() => {
-    if (!router.isFallback) {
-      console.log(router.query);
+    if (router.isReady) {
+      setProject(sideProjcets.filter((project) => project.id === projectId)[0]);
     }
-  }, [router.isFallback]);
+  }, [router.isReady]);
 
   if (router.isFallback) {
     return <p>loading...</p>;

@@ -21,25 +21,25 @@ const Projects: React.FC = () => {
           ) => {
             return (
               <Delayed waitBeforeShow={i * 200} key={id}>
-                {/* <Link href={`/projects/${id}`}> */}
-                <div className="animate-fade p-8 border border-black flex-col text-left hover:border-transparent cursor-pointer">
-                  {img && <img src={img} alt="poster" />}
-                  <h1 aria-label="title" className="font-bold my-2">
-                    {title}
-                  </h1>
-                  <p aria-label="description">{description}</p>
-                  <div className="text-right text-gray-600 mt-4">
-                    <a href={repoLink} className="underline">
-                      repo
-                    </a>
-                    {demoLink && (
-                      <a href={demoLink} className="underline ml-2">
-                        demo
+                <Link href={`/projects/${id}`}>
+                  <div className="animate-fade p-8 border border-black flex-col text-left hover:border-transparent cursor-pointer">
+                    {img && <img src={img} alt="poster" />}
+                    <h1 aria-label="title" className="font-bold my-2">
+                      {title}
+                    </h1>
+                    <p aria-label="description">{description}</p>
+                    <div className="text-right text-gray-600 mt-4">
+                      <a href={repoLink} className="underline">
+                        repo
                       </a>
-                    )}
+                      {demoLink && (
+                        <a href={demoLink} className="underline ml-2">
+                          demo
+                        </a>
+                      )}
+                    </div>
                   </div>
-                </div>
-                {/* </Link> */}
+                </Link>
               </Delayed>
             );
           }
