@@ -42,30 +42,37 @@ const ProjectDetails: React.FC = () => {
         <Link href="/projects">
           <a className="underline">{"<-"} back</a>
         </Link>
-        <h1 className="text-3xl my-8">{title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: marked(story || "") }} />
-        {img && (
-          <img
-            src={img}
-            alt="project screenshot"
-            className="text-center w-full object-contain lg:h-screen-3/4 md:h-screen-1/2 sm:h-screen-1/3"
+        <div className="lg:mx-36 md:mx-24 sm:mx-0 xl:52">
+          <h1 className="text-3xl my-8">{title}</h1>
+          <div
+            className="text-xl leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: marked(story) }}
           />
-        )}
-        {screenShots && <h1 className="text-3xl my-8">Mobile app</h1>}
-        <div className="grid lg:grid-cols-6 md:grid-cols-2 sm:grid-cols-1">
-          {screenShots &&
-            screenShots.split(",").map((screen) => {
-              return <img src={screen} alt="screenshot" key={screen} />;
-            })}
-        </div>
-        <br />
-        <div className="flex">
-          <a className="underline text-gray-700" href={demoLink}>
-            demo
-          </a>
-          <a className="ml-3 underline text-gray-700" href={repoLink}>
-            github repo
-          </a>
+          {img && (
+            <img
+              src={img}
+              alt="project screenshot"
+              className="text-center w-full object-contain lg:h-screen-3/4 md:h-screen-1/2 sm:h-screen-1/3"
+            />
+          )}
+          {screenShots && <h1 className="text-3xl my-8">Mobile app</h1>}
+          <div className="grid lg:grid-cols-6 md:grid-cols-2 sm:grid-cols-1">
+            {screenShots &&
+              screenShots.split(",").map((screen) => {
+                return <img src={screen} alt="screenshot" key={screen} />;
+              })}
+          </div>
+          <br />
+          <div className="flex">
+            {demoLink && (
+              <a className="underline text-gray-700 text-lg" href={demoLink}>
+                demo
+              </a>
+            )}
+            <a className="ml-3 underline text-gray-700 text-lg" href={repoLink}>
+              github repo
+            </a>
+          </div>
         </div>
       </div>
       <Footer />

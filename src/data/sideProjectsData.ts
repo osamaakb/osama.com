@@ -18,10 +18,10 @@ export const sideProjcets: SideProject[] = [
         story: `The original [giphy](https://giphy.com/) is slow and has lots of features that I don't need and I think
         most of people too, so I went ahead and made something simpler and get you the job done with simple UI.  
   
-        Tech stack:
-        - react (JavaScript)
-        - giphy api
-        - redux
+Tech stack:
+- react (JavaScript)
+- giphy api
+- redux
         `,
         repoLink: "https://github.com/osamaakb/giphier-for-fast-gifs",
         demoLink: "https://giphier.netlify.app/",
@@ -32,17 +32,16 @@ export const sideProjcets: SideProject[] = [
         title: "watch later",
         description: "Simple website where you can keep all your movies in one place to watch later",
         story: `
-        Simple website where you can keep all your movies in one place to watch later,
+Simple website where you can keep all your movies in one place to watch later,
 
-        _it was built using vanillaJS._
+_it was built using vanillaJS._
 
-        live website:
-        https://osamaakb.github.io/watch-later-web/#
+live website: https://osamaakb.github.io/watch-later-web/#
 
-        ### Mobile Version
-        This website is originally a mobile app, you can find the androind app [here](https://play.google.com/store/apps/details?id=com.osama.akb.watchlater)
+### Mobile Version
+This website is originally a mobile app, you can find the androind app [here](https://play.google.com/store/apps/details?id=com.osama.akb.watchlater)
 
-        if you want to build or participate in building the ios app, feel free to contact me.
+if you want to build or participate in building the ios app, feel free to contact me.
 
         `,
         repoLink: "https://github.com/osamaakb/watch-later-web",
@@ -72,17 +71,17 @@ export const sideProjcets: SideProject[] = [
         title: "mentorship",
         description: "Cool project to provide mentroships in easy way",
         story: `
-        This website was developed by the students of the recoded bootcamp in Istanbul/Turkey
+This website was developed by the students of the recoded bootcamp in Istanbul/Turkey
         
-        You can visit the website live [here](https://osamaakb.github.io/mentorship/)
+You can visit the website live [here](https://osamaakb.github.io/mentorship/)
         
-        # What is Mentoship?
-        Small website that allows you to find a Mentor/Mentee with the time that suits you and connect with them really easy
-        
-        # Tech Stack
-        - HTML/CSS
-        - Vanilla JS
-        - Firebase Auth and Firestore Database
+# What is Mentoship?
+Small website that allows you to find a Mentor/Mentee with the time that suits you and connect with them really easy
+
+# Tech Stack
+    - HTML/CSS
+    - Vanilla JS
+    - Firebase Auth and Firestore Database
         `,
         demoLink: "https://osamaakb.github.io/mentorship/",
         repoLink: "https://github.com/osamaakb/mentorship",
